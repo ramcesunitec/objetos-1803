@@ -11,8 +11,13 @@ public class Conversion {
     public float centigradosAFarenheit(){
         //Este metodo tiene logica
         
-        float resultado= (grados.getCentigrados()*1.8f)+32;
-        return resultado;
+        float resultado1= (grados.getCentigrados()*1.8f)+32;
+        return resultado1;
+    }
+    
+    public float FarenheitaCentigrados(){
+        float resultado2=grados.getFarenheit()*(-17.28f);
+        return resultado2;
     }
 
     public Grados getGrados() {
@@ -33,6 +38,10 @@ public class Conversion {
         return resultadoMaP;
     }
     
+    public float PiesAMetros(){
+        float resulatadoPaM=longitud.getPies()*0.30f;
+        return resulatadoPaM;
+    }
 
     public Longitud getLongitud() {
         return longitud;
