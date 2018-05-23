@@ -212,38 +212,25 @@ public class Ventanita extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         String variable = (String) jComboBox1.getSelectedItem();
-        if(variable=="Farenheit a Centigrados"){
         Grados g=new Grados();
         g.setFarenheit(Float.parseFloat(jTextField3.getText()));
         Conversion c=new Conversion();
         c.setGrados(g);
+        
+        if(variable=="Farenheit a Centigrados"){
+        
         jLabel7.setText(""+c.FarenheitaCentigrados());
         
         }else if(variable=="Centigrados a Farenheit"){
-         Grados g=new Grados();
-        //A este objeto le asignamos un valor a su atributo Centigrados
-        g.setCentigrados(Float.parseFloat(jTextField3.getText()));
-        //Creamos un objeto de la clase Conversion
-        Conversion c=new Conversion();
-        c.setGrados(g);
-        //Aplicar el modelo
+         
         jLabel7.setText(""+c.centigradosAFarenheit()); 
         
         }else if(variable=="Pies a Metros"){
-         Longitud l=new Longitud();
-         l.setPies(Float.parseFloat(jTextField3.getText()));
-         Conversion c=new Conversion();
-         c.setLongitud(l);
+        
          jLabel7.setText(""+c.PiesAMetros());
          
         }else if(variable=="Metros a Pies"){
-         Longitud l=new Longitud();
-        //A este objeto le asignamos un valor a su atributo Centigrados
-        l.setMetros(Float.parseFloat(jTextField3.getText()));
-        //Creamos un objeto de la clase Conversion
-        Conversion c=new Conversion();
-        c.setLongitud(l);
-        //Aplicar el modelo
+        
         jLabel7.setText(""+c.metrosAPies());   
         }
     }//GEN-LAST:event_jButton3ActionPerformed
