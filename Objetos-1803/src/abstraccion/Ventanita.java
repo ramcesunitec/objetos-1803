@@ -65,7 +65,7 @@ public class Ventanita extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel4.setText("Introduce los grados centigrados");
+        jLabel4.setText("Introduce los metros");
 
         jButton2.setText("CONVERTIR A PIES");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -213,24 +213,32 @@ public class Ventanita extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         String variable = (String) jComboBox1.getSelectedItem();
         Grados g=new Grados();
-        g.setFarenheit(Float.parseFloat(jTextField3.getText()));
+               
         Conversion c=new Conversion();
         c.setGrados(g);
         
+        Longitud l=new Longitud();
+        c.setLongitud(l);
+              
+               
         if(variable=="Farenheit a Centigrados"){
         
+        g.setFarenheit(Float.parseFloat(jTextField3.getText()));
         jLabel7.setText(""+c.FarenheitaCentigrados());
-        
+                       
         }else if(variable=="Centigrados a Farenheit"){
          
+        g.setCentigrados(Float.parseFloat(jTextField3.getText()));
         jLabel7.setText(""+c.centigradosAFarenheit()); 
-        
+                
         }else if(variable=="Pies a Metros"){
         
+         l.setPies(Float.parseFloat(jTextField3.getText()));
          jLabel7.setText(""+c.PiesAMetros());
          
         }else if(variable=="Metros a Pies"){
         
+        l.setMetros(Float.parseFloat(jTextField3.getText()));
         jLabel7.setText(""+c.metrosAPies());   
         }
     }//GEN-LAST:event_jButton3ActionPerformed

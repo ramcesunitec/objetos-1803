@@ -16,7 +16,7 @@ public class Conversion {
     }
     
     public float FarenheitaCentigrados(){
-        float resultado2=grados.getFarenheit()*(-17.28f);
+        float resultado2=(grados.getFarenheit()-32f)/1.80f;
         return resultado2;
     }
 
