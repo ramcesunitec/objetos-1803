@@ -3,29 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package animales;
+package constructores2;
 
 /**
  *
  * @author ramce
  */
-public class Animal {
-    private String nombre;
+public class Persona {
+   String nombre;
+   int edad;
+   int peso;
 
-    public String getNombre() {
-        return nombre;
+    public Persona() {
     }
 
-    public void setNombre(String nombre) {
+    public Persona(String nombre) {
         this.nombre = nombre;
     }
-    
-   
-    public String obtenerRuido() {
-        return "";
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
     }
-    
-    
-    
-    
+   
+   
 }

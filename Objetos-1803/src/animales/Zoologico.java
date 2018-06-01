@@ -80,7 +80,6 @@ jComboBox1.setModel(modelo);
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-
      Animal a=   (Animal) jComboBox1.getSelectedItem();
         System.out.println(a.obtenerRuido());
     }//GEN-LAST:event_jButton1ActionPerformed
