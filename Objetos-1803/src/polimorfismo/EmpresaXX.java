@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conversiones;
+package polimorfismo;
+
+import java.util.*;
 
 /**
  *
  * @author ramce
  */
-public abstract class Conversion {
-    public abstract float convertir(float resultado);
+public class EmpresaXX {
+    public static void main(String[] args) {
+        ArrayList<Trabajador>trabajadores=new ArrayList<>();
+        
+    }
 }

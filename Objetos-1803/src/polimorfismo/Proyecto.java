@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package conversiones;
+package polimorfismo;
 
 /**
  *
  * @author ramce
  */
-public abstract class Conversion {
-    public abstract float convertir(float resultado);
+public class Proyecto extends Trabajador{
+
+    @Override
+    public void pagar() {
+        System.out.println("TRABAJOR PPOR PROYECTO SE LE DARA SU ´PAGO");
+    }
+    
 }

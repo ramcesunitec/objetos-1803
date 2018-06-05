@@ -9,18 +9,25 @@ package conversiones;
  *
  * @author ramce
  */
-public class CentigradosaFarenheit implements Conversion{
+public class CentigradosaFarenheit extends Conversion{
 
     @Override
-    public float convertir(float grados) {
-        float resultado=(grados*1.8f)+32;
+    public float convertir(float resultado) {
+        //float resultado=(grados*1.8f)+32f;
         return resultado;
     }
 
-    @Override
-    public String toString() {
-        return "Centigrados a Farenheit";
-    }
+    
 
+   
+
+    /*
+    
+    */
+    
+    /*
+    return "Centigrados a Farenheit";
+    */
+    
     
 }
