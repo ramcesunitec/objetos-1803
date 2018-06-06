@@ -9,17 +9,17 @@ package conversiones;
  *
  * @author ramce
  */
-public class CentigradosaFarenheit extends Conversion{
+public class PiesaMetros extends Conversion{
 
     @Override
-    public float convertir(float gradosC) {
-        float resultado=(gradosC*1.8f)+32f;
-        return resultado;
+    public float convertir(float longitudFt) {
+      float resultado=longitudFt/3.28f;
+      return resultado;
     }
-    
+
     @Override
     public String toString() {
-        return "CentigradosaFarenheit";
+        return "PiesaMetros";
     }
     
     

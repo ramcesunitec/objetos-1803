@@ -10,5 +10,5 @@ package conversiones;
  * @author ramce
  */
 public abstract class Conversion {
-    public abstract float convertir(float resultado);
+    public abstract float convertir(float valor);
 }
