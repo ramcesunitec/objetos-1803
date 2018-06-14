@@ -93,10 +93,8 @@ public class Aplicacion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Usuario u=new Usuario();
-        u.setAltura(Float.parseFloat(jTextField2.getText()));
-        u.setPeso(Float.parseFloat(jTextField1.getText()));
-        
+        Usuario u=new Usuario(Float.parseFloat(jTextField1.getText()), Float.parseFloat(jTextField2.getText()));
+                
         CalcularImc cimc=new CalcularImc();
         cimc.setUsuario(u);
         jLabel3.setText(""+cimc.Imc());

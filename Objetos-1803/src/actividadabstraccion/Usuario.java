@@ -13,6 +13,11 @@ public class Usuario {
     float peso;
     float altura;
 
+    public Usuario(float peso, float altura) {
+        this.peso = peso;
+        this.altura = altura;
+    }
+
     public float getPeso() {
         return peso;
     }
